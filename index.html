@@ -9,10 +9,16 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/MDigiFest.png" type="image/x-png">
+
+    <script src="./js/app.js"></script>
 </head>
-<body>
+<body onload="onBodyLoadHandler()" class="still-load">
+    <div class="preload">
+        <img src="./assets/Header_Decoration.png" alt="">
+    </div>
+
     <img class="decoration decoration_top-left" src="./assets/Moluccas_Top_Decoration.png" alt="">
     <img class="decoration decoration_top-right" src="./assets/Decoration_Top_Right.png" alt="">
     <img class="decoration decoration_bottom-left" src="./assets/Decoration_Bottom_Left.png" alt="">
@@ -35,8 +41,31 @@
     </nav>
     <header class="header">
         <img src="./assets/Header_Decoration.png" alt="">
-        <h1 id="moluccas-digifest">Apa itu <span class="highlight"><span class="highlight moluccas">Moluccas</span> <span class="highlight digifest">DigiFest</span></span>?</h1>
-        <p class="header-explanation">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod ut asperiores soluta? Voluptatum architecto recusandae enim nihil modi, aliquam repudiandae excepturi accusantium obcaecati beatae corporis nisi quasi dolorem voluptates perferendis!</p>
+        <div class="header-button">
+            <a href="#">Pelajari Lebih Lanjut</a>
+            <a href="daftar.html">Daftar</a>
+        </div>
+        <div class="header-body">
+            <h1 id="moluccas-digifest">
+                Apa itu 
+                <span class="highlight">
+                    <span class="highlight moluccas">Moluccas</span> 
+                    <span class="highlight digifest">DigiFest?</span>
+                </span>
+            </h1>
+            <p class="header-explanation">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod ut asperiores soluta? Voluptatum architecto recusandae enim nihil modi, aliquam repudiandae excepturi accusantium obcaecati beatae corporis nisi quasi dolorem voluptates perferendis!</p>
+        </div>
     </header>
+    <main>
+
+    </main>
+    <footer class="footer">
+        <p>
+            Copyright &copy; 2022 — Bank Indonesia
+        </p>
+        <p>
+            Kantor Perwakilan Bank Indonesia Provinsi Maluku
+        </p>
+    </footer>
 </body>
 </html>
