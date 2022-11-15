@@ -28,6 +28,8 @@ body {
     display: flex;
     justify-content: center;
     padding: 0 1em;
+    position: sticky;
+    top: 0;
 }
 
 .nav-brand img {
@@ -59,7 +61,7 @@ body {
 }
 
 .decoration {
-    position: absolute;
+    position: fixed;
 }
 
 .decoration_top-left {
@@ -67,6 +69,20 @@ body {
     top: 0;
     z-index: -1;
     width: 50vmin;
+}
+
+.decoration_top-right {
+    right: 0;
+    top: 0;
+    z-index: -1;
+    width: 10vmin;
+}
+
+.decoration_bottom-left {
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 10vmin;
 }
 
 .highlight {
